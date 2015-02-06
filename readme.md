@@ -28,13 +28,3 @@ that particular hash instead of the entire branch.
 ```
 git revert <hash>
 ```
-
-#### This is the title of my new thing
-
-When you're doing git, you can do
-
-```
-git rebase -i master
-```
-
-for an interactive rebase!
