@@ -1,17 +1,18 @@
-# This is a read.me
+# Incremental git
 
-Git commits, like Trello cards, should be done in "increments"
+Git commits, like Trello cards, should be a reflection of incremental changes.
 
-Think of a commit as shipment of code that might, at some point, need to be
-cherry-picked or reverted independent of the other commits that it's associated
-with.
+Think of a commit as snippet of code that might, at some point, need to be
+cherry-picked or reverted independently of other commits.
 
 ## Cherry-picking
 
 Cherry-picking allows you to apply a particular commit to your branch. It's
 awesome for applying commits to a detached branch, applying hotfixes, etc. We
 can do hotfixes by fixing master and then cherry-picking the commit to grab
-the code that fixes it and applying it to a detached hotfix branch.
+the code that fixes it and applying it to a detached hotfix branch. This allows
+us to "work off of master" and only detach for hotfixes. It also ensures that
+the same commit hashes used for the hotfix are merged into master.
 
 ```
 git cherry-pick <hash>
